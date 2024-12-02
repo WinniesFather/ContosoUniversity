@@ -6,10 +6,10 @@ public static class DbInitializer
 {
     public static void Initialize(SchoolContext context)
     {
-        // Look for any students.
+        
         if (context.Students.Any())
         {
-            return;   // DB has been seeded
+            return;   
         }
 
         var alexander = new Student
